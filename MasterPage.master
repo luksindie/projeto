@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page prototype for a monitoring system project" />   
+    <title>CEEM</title>
+      
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/ceemStyle.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="homepage">
+
+    <header id="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top  corCabecalho" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Logo_vFinal_v2.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Sistema</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav importantBtn">
+                        <li class="active"><a id="important" href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
+
+   
+    <!--/#contact-info-->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div id="contato" class="row center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="#">
+                        <span class="social"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="social-content"><span>ceem@support.com.br</span></span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="#">
+                        <span class="social"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="social-content"><span>+55 2344-2323</span></span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="contact-container">
+                        <a target="_blank" href="https://www.facebook.com/consumonitorado/">
+                            <span class="social"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                            <span class="social-content"><span>@consumonitorado</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="#">
+                        <span class="social"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <span class="social-content"><span>@consumonitorado</span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-sm-12">
+                    <div class="pipe-separated-list-container">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sistema </a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">FATEC</a></li>
+                            <li><a href="#">Cadastro</a></li>
+                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+
+    
+    </body>
+</html>
